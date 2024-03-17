@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gucina&display=swap">
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="src/input.css" />
+    <link href="src/output.css" rel="stylesheet" />
+
+    <script src="main.js" defer></script>
+
+  </head>
+  <body>
+    <div class="w-screen h-screen flex p-8">
+      <!-- bg image -->
+      <div
+        class="bg-cover bg-center bg-no-repeat w-full h-full rounded-3xl bg-hero-pattern hero-image"
+      >
+        <!-- bg gradient -->
+        <div class="my-gr w-full h-full rounded-3xl flex items-center">
+          <div class="m-10 flex justify-between w-full items-end">
+            <div class="flex items-center gap-3 justify-self-end">
+              <!-- line -->
+              <div class="w-1.5 rounded-2xl h-20 bg-orange-600"></div>
+              <!-- heading -->
+              <div>
+                <h1
+                  class="text-white text-5xl login-heading items-end font-normal font-raleway"
+                >
+                  Manage feedback with our <br />
+                  software.
+                </h1>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white w-fit h-fit rounded-3xl px-12 py-8 ">
+              <div class="flex gap-2 mb-14">
+                <img src="assets/logo.png" alt="" />
+                <h1 class="text-3xl font-bold text-orange-600 align-middle">
+                  Feed<span class="text-blue-600">back</span>
+                </h1>
+              </div>
+              <div class="mb-5">
+                <h3 class="font-semibold text-3xl mb-2">Welcome Back!</h3>
+                <p class="text-slate-500">
+                  Enter your credentials to login ito administrator area.
+                </p>
+              </div>
+              <form action="" class="flex flex-col">
+                <label
+                  class="text-slate-500 font-semibold my-3 font-raleway"
+                  for="Email"
+                  >Email</label
+                >
+                <input
+                  class="outline-none font-raleway p-2 w-full border-2 rounded-md font-medium"
+                  type="email"
+                />
+                <label
+                  class="text-slate-500 font-semibold my-3 font-raleway"
+                  for="password"
+                  >Password</label
+                >
+                <div class="relative">
+                    <input
+                    id="password-input"
+                      class="outline-none font-raleway p-2 w-full border-2 rounded-lg font-medium"
+                      type="password"
+                    />
+                    <div class="absolute right-0 bottom-2 pr-5 cursor-pointer " id="eye-icon">
+                     
+                         
+                    </div>
+                </div>
+                <div class="flex justify-between my-3">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" class="w-4 h-4 border-none" />
+                    <label class="font-raleway font-semibold" for=""
+                      >Remember me</label
+                    >
+                  </div>
+                  <div>
+                    <a href="">Forget password?</a>
+                  </div>
+                </div>
+                <button
+                  class="bg-blue-500 py-4 rounded-lg font-medium text-white mt-4"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.my-gr {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(30 30 44 / 1));
+    
+}
+.fade-effect {
+    background: rgba(0 0 0 / .4);
+}
+.font-raleway {
+    font-family: 'Raleway';
+}

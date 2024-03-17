@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=10" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/input.css" />
+    <link href="src/output.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script src="main1.js" defer></script>
+
+    <title>Feedback Hub</title>
+  </head>
+  <body>
+    <div id="dark-screen" class="">
+      <!-- logout screen -->
+    </div>
+
+    <main class="flex">
+      <nav class="flex relative">
+        <div class="bg-[#ECECF9] m-5 rounded-3xl">
+          <div class="flex justify-center gap-2 py-6">
+            <img src="assets/logo.png" alt="" />
+            <h1. class="text-3xl font-bold text-orange-600 align-middle">
+              Feed<span class="text-blue-600">back</span>
+            </h1.>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="bg-slate-200 p-2 rounded-lg mx-5">
+              <p
+                class="bg-blue-500 rounded-lg flex items-center w-full p-2 text-sm font-semibold text-white gap-4 px-5"
+              >
+                <svg class="icon w-7 aspect-square">
+                  <use xlink:href="icons.svg#Vector"></use>
+                </svg>
+                My Feedback
+              </p>
+            </div>
+            <div class="px-7">
+              <hr class="border border-gray-300 w-full px-5" />
+            </div>
+            <div class="p-2 rounded-lg mx-5">
+              <p
+                class="truncate rounded-lg flex w-full items-center text-sm font-semibold text-gray-500 gap-4 px-5"
+              >
+                <svg class="icon w-7 aspect-square">
+                  <use xlink:href="icons.svg#Frame"></use>
+                </svg>
+                Consolidated Feedback
+              </p>
+            </div>
+            <div class="px-7">
+              <hr class="border border-gray-300 w-full px-5" />
+            </div>
+            <div class="p-2 rounded-lg mx-5">
+              <p
+                class="rounded-lg flex w-full items-center text-sm font-semibold text-gray-500 gap-4 px-5"
+              >
+                <svg class="icon w-7 aspect-square">
+                  <use xlink:href="icons.svg#profile-circle"></use>
+                </svg>
+                My Profile
+              </p>
+            </div>
+          </div>
+          <div class="p-2 rounded-lg mx-5 absolute bottom-10">
+            <button
+              id="logout-btn"
+              class="rounded-lg flex w-full items-center text-sm font-semibold text-gray-500 gap-4 px-5"
+            >
+              <svg class="icon w-7 aspect-square">
+                <use xlink:href="icons.svg#logout"></use>
+              </svg>
+              Log out
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main container -->
+      <div class="my-10 w-full mx-5">
+        <!-- profile row -->
+        <div class="flex p-4 items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              src="assets/logedin-user.png"
+              class="w-10 rounded-full aspect-square object-cover"
+              style="object-position: top center"
+              alt=""
+            />
+            <p class="text-base font-semibold">Hi Gilbert Ivan, &#8964;</p>
+          </div>
+          <!-- time -->
+          <div class="text-[#6B7280] font-medium">
+            <p>12:24 Pm &nbsp; I &nbsp; 12:10:2028</p>
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="flex px-4 justify-between">
+          <h4 class="font-semibold text-3xl">Welcome Back</h4>
+          <!-- search -->
+          <div class="flex items-center gap-2">
+            <div class="relative">
+              <input
+                type="text"
+                class="pl-10 pr-4 py-2 border rounded-3xl w-full outline-none"
+                placeholder="Search everything"
+              />
+              <div
+                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+              >
+                <svg class="icon w-5 aspect-square">
+                  <use xlink:href="icons.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- notifications -->
+            <div class="border border-gray-400 rounded-full p-2 relative">
+              <!-- red dot -->
+              <div
+                class="bg-red-600 w-2 aspect-square absolute rounded-full right-3"
+              ></div>
+              <svg class="icon w-6 aspect-square">
+                <use xlink:href="icons.svg#notification"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- hr -->
+        <div class="px-4 pt-5">
+          <hr class="w-full border" />
+        </div>
+
+        <!-- feedback row -->
+        <div
+          class="image-container bg-contain bg-top bg-no-repeat bg-[url('../assets/wind-pattern.png')]"
+        >
+          <div class="flex px-4 justify-between items-center pt-5">
+            <h4 class="text-2xl font-medium">My Feedback</h4>
+            <!-- feedack buttons -->
+            <div class="flex gap-3">
+              <button
+                type="button"
+                class="flex gap-2 items-center bg-slate-200 rounded-lg p-2 text-sm"
+              >
+                <svg class="icon w-4 aspect-square">
+                  <use xlink:href="icons.svg#filter"></use>
+                </svg>
+                Filter
+              </button>
+              <button
+                type="button"
+                class="bg-orange-600 text-white px-3 rounded-lg p-2 text-sm"
+              >
+                Previous Feedback
+              </button>
+              <button
+                type="button"
+                class="bg-blue-500 text-white px-3 rounded-lg p-2 text-sm"
+              >
+                Add Feedback
+              </button>
+            </div>
+          </div>
+          <!-- data section -->
+          <section
+            class="border m-5 mr-1.4 p-6 bg-white rounded-lg shadow-md shadow-slate-200"
+          >
+            <!-- section header -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <p>Showing</p>
+                <button
+                  id="dropdownHoverButton"
+                  data-dropdown-toggle="dropdownHover"
+                  data-dropdown-trigger="hover"
+                  class="text-gray-400 border font-normal rounded-lg text-sm px-5 py-2 text-center inline-flex items-center"
+                  type="button"
+                >
+                  10
+                  <svg
+                    class="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <p>entries</p>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownHover"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownHoverButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="relative mr-3">
+                  <input
+                    type="text"
+                    class="pl-10 py-2 border rounded-md w-full outline-none"
+                    placeholder="Search"
+                  />
+                  <div
+                    class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                  >
+                    <svg class="icon w-5 aspect-square">
+                      <use xlink:href="icons.svg#search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="flex gap-2 items-center bg-slate-200 rounded-lg p-1. px-3 text-sm"
+                >
+                  <img src="assets/gmail.png" alt="" />
+                  Email
+                </button>
+                <button
+                  type="button"
+                  class="flex gap-2 items-center bg-slate-200 rounded-lg p-1. px-3 text-sm"
+                >
+                  <img src="assets/excel.png" alt="" />
+                  Excel Export
+                </button>
+                <button
+                  type="button"
+                  class="flex gap-2 items-center bg-slate-200 rounded-lg p-1. px-3 text-sm"
+                >
+                  <img src="assets/pdf.png" alt="" />
+                  PDF Export
+                </button>
+              </div>
+            </div>
+            <!-- data table-->
+            <table class="table-auto min-w-full mt-7">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="rounded-tl-lg rounded-bl-lg">
+                    <input
+                      type="checkbox"
+                      class="checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <th class="font-medium text-start px-3 py-3">S.No</th>
+                  <th class="font-medium text-start px-3 py-3">
+                    <div class="flex items-center gap-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.81994 4.47998L4.39213 2L1.96436 4.47998"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.39209 14V2"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.84314 11.52L11.271 14L13.6987 11.52"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.2709 2V14"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Creator</span>
+                    </div>
+                  </th>
+                  <th class="font-medium text-start px-3 py-3">
+                    <div class="flex items-center gap-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.81994 4.47998L4.39213 2L1.96436 4.47998"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.39209 14V2"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.84314 11.52L11.271 14L13.6987 11.52"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.2709 2V14"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Title</span>
+                    </div>
+                  </th>
+                  <th class="font-medium text-start px-3 py-3">
+                    <div class="flex items-center gap-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.81994 4.47998L4.39213 2L1.96436 4.47998"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.39209 14V2"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.84314 11.52L11.271 14L13.6987 11.52"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.2709 2V14"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Client</span>
+                    </div>
+                  </th>
+                  <th class="font-medium text-start px-3 py-3">
+                    <div class="flex items-center gap-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.81994 4.47998L4.39213 2L1.96436 4.47998"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.39209 14V2"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.84314 11.52L11.271 14L13.6987 11.52"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.2709 2V14"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Feedback</span>
+                    </div>
+                  </th>
+                  <th
+                    class="font-medium text-start px-3 py-3 whitespace-nowrap"
+                  >
+                    <div class="flex items-center gap-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.81994 4.47998L4.39213 2L1.96436 4.47998"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.39209 14V2"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.84314 11.52L11.271 14L13.6987 11.52"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.2709 2V14"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Sales Person</span>
+                    </div>
+                  </th>
+                  <th
+                    class="font-medium text-start px-3 py-3 whitespace-nowrap"
+                  >
+                    <div class="flex items-center gap-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.81994 4.47998L4.39213 2L1.96436 4.47998"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.39209 14V2"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.84314 11.52L11.271 14L13.6987 11.52"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.2709 2V14"
+                          stroke="#292D32"
+                          stroke-width="1.3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Cash Priority</span>
+                    </div>
+                  </th>
+                  <th
+                    class="font-medium text-start px-3 py-3 rounded-tr-lg rounded-br-lg"
+                  >
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="m-10">
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">1.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">2.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">3.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">4.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">5.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">5.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-6 border-b border-dashed">
+                    <input
+                      type="checkbox"
+                      class="items-center checked:bg-blue-500 w-4 h-4"
+                    />
+                  </th>
+                  <td class="px-3 py-6 border-b border-dashed">7.</td>
+                  <td class="px-3 py-6 border-b border-dashed">John Doe</td>
+                  <td class="px-3 py-6 border-b border-dashed">Test 5635</td>
+                  <td class="px-3 py-6 border-b border-dashed">Sandra Adams</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    Lörem ipsum hexaråvis sähiskap. Devåktiga.
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <div class="flex items-center gap-1">
+                      <!-- user image -->
+                      <img
+                        src="assets/user-image.png"
+                        class="w-10 rounded-full aspect-square object-cover"
+                        alt=""
+                      />
+                      <!-- user-info -->
+                      <div>
+                        <p class="flex flex-col">
+                          John Doe
+                          <span class="text-sm text-gray-500">Employee</span>
+                        </p>
+                      </div>
+                      <span class=""> </span>
+                    </div>
+                  </td>
+                  <td class="px-3 py-6 border-b border-dashed">No data</td>
+                  <td class="px-3 py-6 border-b border-dashed">
+                    <svg
+                      width="26"
+                      height="25"
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.1938 12.5C25.1938 19.1579 19.6595 24.5729 12.8104 24.5729C5.96137 24.5729 0.427091 19.1579 0.427091 12.5C0.427091 5.84213 5.96137 0.427091 12.8104 0.427091C19.6595 0.427091 25.1938 5.84213 25.1938 12.5Z"
+                        fill="#F9FAFB"
+                        stroke="#D7DFE9"
+                        stroke-width="0.854183"
+                      />
+                      <path
+                        d="M17.0804 13.7487C17.7879 13.7487 18.3615 13.189 18.3615 12.4987C18.3615 11.8083 17.7879 11.2487 17.0804 11.2487C16.3729 11.2487 15.7994 11.8083 15.7994 12.4987C15.7994 13.189 16.3729 13.7487 17.0804 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12.8103 13.7487C13.5178 13.7487 14.0913 13.189 14.0913 12.4987C14.0913 11.8083 13.5178 11.2487 12.8103 11.2487C12.1028 11.2487 11.5292 11.8083 11.5292 12.4987C11.5292 13.189 12.1028 13.7487 12.8103 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8.54011 13.7487C9.24761 13.7487 9.82115 13.189 9.82115 12.4987C9.82115 11.8083 9.24761 11.2487 8.54011 11.2487C7.83261 11.2487 7.25906 11.8083 7.25906 12.4987C7.25906 13.189 7.83261 13.7487 8.54011 13.7487Z"
+                        stroke="#5E718D"
+                        stroke-width="0.854183"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- data footer -->
+            <div class="flex justify-center gap-5 my-10 items-center">
+              <p class="text-gray-400">Showing 1 to 3 of 10 Enteries</p>
+              <p>&#60;</p>
+              <p class="bg-[#F0F3F5] rounded-sm px-2 text-sm">1</p>
+              <p>&#62;</p>
+              <p class="bg-[#F0F3F5] rounded-sm flex items-center px-2 text-sm">
+                10
+                <svg
+                  class="w-2.5 h-2.5 ms-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
